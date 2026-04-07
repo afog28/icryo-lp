@@ -22,8 +22,11 @@
       --coral-glow:   rgba(242, 98, 98, 0.35);
       --white:        #FFFFFF;
       --off-white:    #EEF4FB;
-      --text-muted:   rgba(255,255,255,0.60);
-      --border-frost: rgba(184, 217, 245, 0.20);
+      --text-muted:   rgba(255,255,255,0.70);
+      --border-frost: rgba(184, 217, 245, 0.25);
+      /* High-contrast accent for labels/icons on dark/blue backgrounds */
+      --accent-label: #7EC8F0;
+      --accent-check: #6DC5F0;
 
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body:    'DM Sans', system-ui, sans-serif;
@@ -124,7 +127,7 @@
       font-size: 1.35rem; font-weight: 700;
       letter-spacing: -0.02em;
     }
-    .nav-logo-text span { color: var(--blue-light); }
+    .nav-logo-text span { color: var(--ice); }
     .nav-right { display: flex; align-items: center; gap: 16px; }
     .nav-tag {
       font-size: 0.78rem; font-weight: 500;
@@ -264,7 +267,7 @@
       font-size: 0.82rem; color: var(--text-muted);
       animation: fadeUp 0.8s 0.5s ease both;
     }
-    .hero-trust svg { color: var(--blue-light); }
+    .hero-trust svg { color: var(--ice); }
 
     /* Hero visual side */
     .hero-visual {
@@ -304,7 +307,7 @@
       display: flex; align-items: center; gap: 10px;
       font-size: 0.88rem; color: rgba(255,255,255,0.80);
     }
-    .service-mini-item svg { color: var(--blue-light); flex-shrink: 0; }
+    .service-mini-item svg { color: var(--ice); flex-shrink: 0; }
 
     .hero-float-badge {
       position: absolute; right: -20px; bottom: 60px;
@@ -330,7 +333,7 @@
     .section-label {
       font-size: 0.75rem; font-weight: 600;
       letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--blue-light);
+      color: var(--accent-label);
       margin-bottom: 12px;
     }
     .section-title {
@@ -391,12 +394,12 @@
 
     .service-icon {
       width: 48px; height: 48px;
-      background: rgba(4, 90, 179, 0.20);
-      border: 1px solid rgba(44, 134, 204, 0.25);
+      background: rgba(0, 20, 40, 0.55);
+      border: 1px solid rgba(184, 217, 245, 0.30);
       border-radius: var(--radius-sm);
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 18px;
-      color: var(--ice);
+      color: #fff;
     }
 
     .service-name {
@@ -409,8 +412,8 @@
       display: inline-block; margin-top: 14px;
       font-size: 0.72rem; font-weight: 600;
       letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--blue-light);
-      background: rgba(44, 134, 204, 0.12);
+      color: var(--navy-deep);
+      background: var(--ice);
       border-radius: 20px; padding: 3px 10px;
     }
 
@@ -507,7 +510,7 @@
       padding: 10px 20px;
       font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.80);
     }
-    .trust-badge svg { color: var(--blue-light); }
+    .trust-badge svg { color: var(--ice); }
 
     /* ─── PRICING ────────────────────────────────────────────────── */
     #pricing {
@@ -540,7 +543,7 @@
     .pricing-plan-name {
       font-size: 0.75rem; font-weight: 600;
       letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--blue-light); margin-bottom: 16px;
+      color: var(--ice); margin-bottom: 16px;
     }
     .pricing-headline {
       font-family: var(--font-display);
@@ -554,7 +557,7 @@
       display: flex; align-items: flex-start; justify-content: center;
       gap: 4px; margin-bottom: 8px;
     }
-    .pricing-currency { font-size: 1.5rem; font-weight: 600; margin-top: 6px; color: var(--ice); }
+    .pricing-currency { font-size: 1.5rem; font-weight: 600; margin-top: 6px; color: var(--white); }
     .pricing-number {
       font-family: var(--font-display);
       font-size: 5rem; font-weight: 900; line-height: 1;
@@ -568,7 +571,7 @@
       display: flex; align-items: flex-start; gap: 12px;
       font-size: 0.95rem; line-height: 1.5;
     }
-    .pricing-features li svg { color: var(--blue-light); flex-shrink: 0; margin-top: 2px; }
+    .pricing-features li svg { color: var(--coral); flex-shrink: 0; margin-top: 2px; }
 
     .pricing-note {
       font-size: 0.8rem; color: var(--text-muted);
